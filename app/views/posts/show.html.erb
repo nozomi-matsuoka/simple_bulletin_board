@@ -1,0 +1,13 @@
+<div class="container">
+	<div class="card mt-5">
+	  <div class="card-header">
+	    ID: <%= @post.id %> | Create Date: <%= l(@post.created_at, format: :short) %>
+	  </div>
+	  <div class="card-body">
+	    <h5 class="card-title text-primary"><%= @post.title %></h5>
+	    <p class="card-text"><%= @post.content %></p>
+	    <%= link_to "Back", posts_path, class: "btn btn-primary px-5" %>
+	  </div>
+	</div>
+
+</div>

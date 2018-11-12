@@ -1,0 +1,12 @@
+// Custom bootstrap variables must be set or imported *before* bootstrap.
+@import "bootstrap";
+
+
+.body {
+	width: 1170px;
+}
+
+.card-body p {
+	font-size: 18px;
+	line-height: 28px;
+}

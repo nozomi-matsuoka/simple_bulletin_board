@@ -1,0 +1,16 @@
+<h1 class="text-info mt-5">Create new post</h1>
+
+<%= form_for @post do |f|  %>
+
+<div class="form-group">
+	<h4><%= f.label :title %></h4>
+	<%= f.text_field :title, class: "form-control" %>
+</div>
+
+<div class="form-group">
+	<h4><%= f.label :content %></h4>
+	<%= f.text_area :content, class: "form-control" %>
+</div>
+
+<%= f.submit "Post", class: "btn btn-primary px-5 mt-3" %>
+<% end %>
